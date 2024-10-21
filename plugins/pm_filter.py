@@ -81,8 +81,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/pcmoviegroup>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/pcmoviegroup")]])
+         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/pcmoviesgroup>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/pcmoviesgroup")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -1177,7 +1177,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/pcmoviegroup")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/pcmoviesgroup")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1202,7 +1202,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                  InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url=link.invite_link),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/pcmoviegroup")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/pcmoviesgroup")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1294,7 +1294,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('❤️‍🔥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ❤️‍🔥', url= "https://t.me/+CXvubrKYM6Q4YTY1"),
-                    InlineKeyboardButton('🔰 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🔰', url="https://t.me/pcmoviegroup")
+                    InlineKeyboardButton('🔰 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🔰', url="https://t.me/pcmoviesgroup")
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help')
                   
