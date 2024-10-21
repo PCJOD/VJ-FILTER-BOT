@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "shrill-sophi-ufkkkk-e394168a.koyeb.app".format(FQDN)
+    URL = "https://shrill-sophi-ufkkkk-e394168a.koyeb.app/".format(FQDN)
 else:
-    URL = "shrill-sophi-ufkkkk-e394168a.koyeb.app".format(FQDN)
+    URL = "https://shrill-sophi-ufkkkk-e394168a.koyeb.app/".format(FQDN)
 
 
 
